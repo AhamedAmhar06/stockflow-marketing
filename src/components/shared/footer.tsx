@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Instagram, Facebook } from "lucide-react"
 import BrandMark from "@/components/shared/brand-mark"
 
 const productLinks = [
@@ -10,6 +11,19 @@ const productLinks = [
 const companyLinks = [
   { href: "/contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
+]
+
+const socialLinks = [
+  {
+    href: "https://www.instagram.com/stockflowlk?igsh=cXp1cXNpMzI0M2R2&utm_source=qr",
+    label: "Instagram",
+    icon: Instagram,
+  },
+  {
+    href: "https://www.facebook.com/share/196U68XMju/?mibextid=wwXIfr",
+    label: "Facebook",
+    icon: Facebook,
+  },
 ]
 
 export default function Footer() {
@@ -95,9 +109,28 @@ export default function Footer() {
             <p className="text-sm text-[#6d7690]">
               &copy; {new Date().getFullYear()} Stockflow.lk &mdash; All rights reserved
             </p>
-            <p className="text-sm text-[#9aa3b7] sm:text-right">
-              Built for Sri Lankan CSE investors &bull; Privacy-first
-            </p>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
+                {socialLinks.map((social) => {
+                  const Icon = social.icon
+                  return (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#b6bdd0] transition-colors hover:text-white"
+                      aria-label={social.label}
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  )
+                })}
+              </div>
+              <p className="text-sm text-[#9aa3b7]">
+                Built for Sri Lankan CSE investors &bull; Privacy-first
+              </p>
+            </div>
           </div>
         </div>
       </div>
