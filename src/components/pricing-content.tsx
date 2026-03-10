@@ -18,6 +18,7 @@ const planFeatures = [
   "Unlimited manual trade tracking",
   "Realised profit after brokerage",
   "Dividend income tracking",
+  "AI-based CSE portfolio analytics",
   "Multi-broker portfolio view",
   "Performance summaries and reports",
   "Priority product support",
@@ -27,7 +28,7 @@ const afterSteps = [
   {
     icon: Mail,
     title: "Start the conversation",
-    desc: "Tell us about your current workflow and what you need from portfolio tracking.",
+    desc: "Tell us about your CSE portfolio and what you need from AI-based portfolio management.",
   },
   {
     icon: UserCheck,
@@ -37,7 +38,7 @@ const afterSteps = [
   {
     icon: Lock,
     title: "Track with confidence",
-    desc: "Move into a cleaner workflow focused on realised return, dividends, and capital clarity.",
+    desc: "Move into a cleaner workflow focused on analytics-driven decisions, dividend income, and capital clarity.",
   },
 ]
 
@@ -57,11 +58,11 @@ export default function PricingContent() {
               Pricing
             </p>
             <h1 className="mt-6 text-[3.8rem] font-medium leading-[0.94] tracking-[-0.07em] text-white sm:text-[5.8rem]">
-              One simple annual plan for disciplined portfolio tracking.
+              One annual plan for AI-powered CSE portfolio management.
             </h1>
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-slate-300">
               StockFlow is priced for investors who want a serious workflow for
-              realised profit, dividends, and multi-broker tracking without unnecessary complexity.
+              AI analytics, dividend income tracking, and multi-broker CSE portfolio management.
             </p>
           </motion.div>
         </div>
@@ -89,7 +90,7 @@ export default function PricingContent() {
                 </div>
                 <p className="mt-2 text-xl text-[#6a7388]">per year</p>
                 <p className="mx-auto mt-6 max-w-[34rem] text-lg leading-relaxed text-[#6a7388]">
-                  Built for investors who want one structured workflow across realised return, dividends, and capital movement.
+                  Built for investors who want one structured workflow across AI analytics, dividend income, and capital movement.
                 </p>
               </div>
 
@@ -162,7 +163,7 @@ export default function PricingContent() {
                   Why this plan exists
                 </p>
                 <p className="mt-4 text-xl leading-relaxed text-slate-300">
-                  Most investors do not need more dashboards. They need one place that keeps their net results, income, and capital movement coherent over time.
+                  Most investors do not need more dashboards. They need one place that keeps AI insights, net results, dividend income, and capital movement coherent over time.
                 </p>
               </div>
             </motion.div>

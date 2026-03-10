@@ -7,8 +7,8 @@ interface CTABandProps {
 }
 
 export default function CTABand({
-  heading = "Ready to see your real returns?",
-  subtext = "Talk to the StockFlow team and find the right setup for your portfolio workflow.",
+  heading = "Ready to manage your CSE portfolio with AI insights?",
+  subtext = "Talk to the StockFlow team about portfolio analytics, dividend income tracking, and onboarding.",
 }: CTABandProps) {
   return (
     <section className="py-16 sm:py-24 bg-gray-50 border-t border-gray-100">

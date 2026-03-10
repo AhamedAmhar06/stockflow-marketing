@@ -4,13 +4,13 @@ import Footer from "@/components/shared/footer"
 import HowItWorksContent from "@/components/how-it-works-content"
 
 export const metadata: Metadata = {
-  title: "How It Works | Track CSE Profits in 3 Steps (Stockflow)",
+  title: "How It Works | AI CSE Portfolio Management in 3 Steps",
   description:
-    "Add your invested capital, log trades, and instantly see realised profit after brokerage plus dividends. Stockflow is built for Sri Lankan CSE investors.",
+    "See how Stockflow helps Colombo Stock Exchange investors manage portfolios with AI analytics, dividend income tracking, and realised performance insights.",
   openGraph: {
-    title: "How It Works | Track CSE Profits in 3 Steps (Stockflow)",
+    title: "How It Works | AI CSE Portfolio Management in 3 Steps",
     description:
-      "Add your invested capital, log trades, and instantly see realised profit after brokerage plus dividends. Stockflow is built for Sri Lankan CSE investors.",
+      "See how Stockflow helps Colombo Stock Exchange investors manage portfolios with AI analytics, dividend income tracking, and realised performance insights.",
     type: "website",
     url: "https://stockflow.lk/how-it-works",
   },

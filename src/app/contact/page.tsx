@@ -4,13 +4,13 @@ import Footer from "@/components/shared/footer"
 import ContactContent from "@/components/contact-content"
 
 export const metadata: Metadata = {
-  title: "Contact Us | Stockflow for Sri Lankan CSE Investors",
+  title: "Contact Us | Stockflow AI Portfolio Management for CSE",
   description:
-    "Contact Stockflow for product questions, setup guidance, and portfolio tracking support for Sri Lankan investors.",
+    "Contact Stockflow for AI-powered Colombo Stock Exchange portfolio management support, dividend tracking guidance, and onboarding.",
   openGraph: {
-    title: "Contact Us | Stockflow for Sri Lankan CSE Investors",
+    title: "Contact Us | Stockflow AI Portfolio Management for CSE",
     description:
-      "Contact Stockflow for product questions, setup guidance, and portfolio tracking support for Sri Lankan investors.",
+      "Contact Stockflow for AI-powered Colombo Stock Exchange portfolio management support, dividend tracking guidance, and onboarding.",
     type: "website",
     url: "https://stockflow.lk/contact",
   },

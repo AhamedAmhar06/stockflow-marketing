@@ -4,7 +4,7 @@ export default function manifest(): MetadataRoute.Manifest {
     return {
         name: 'Stockflow',
         short_name: 'Stockflow',
-        description: 'Track your realized stock profits, dividends, and true portfolio performance for Sri Lankan investors.',
+        description: 'AI-based stock market portfolio management for Colombo Stock Exchange investors with dividend income tracking and analytics.',
         start_url: '/',
         display: 'standalone',
         background_color: '#000000',

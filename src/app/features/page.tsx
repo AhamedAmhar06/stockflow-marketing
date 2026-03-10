@@ -4,13 +4,13 @@ import Footer from "@/components/shared/footer"
 import FeaturesContent from "@/components/features-content"
 
 export const metadata: Metadata = {
-  title: "Features | Stockflow CSE Portfolio Tracker",
+  title: "Features | Stockflow AI Portfolio Management for CSE",
   description:
-    "Track realised profit after brokerage, dividend income, invested vs returned, and a multi-broker view. Stockflow is built for Sri Lankan CSE investors.",
+    "Explore AI-powered CSE portfolio analytics, dividend income tracking, realised return calculation, and multi-broker portfolio management in Stockflow.",
   openGraph: {
-    title: "Features | Stockflow CSE Portfolio Tracker",
+    title: "Features | Stockflow AI Portfolio Management for CSE",
     description:
-      "Track realised profit after brokerage, dividend income, invested vs returned, and a multi-broker view. Stockflow is built for Sri Lankan CSE investors.",
+      "Explore AI-powered CSE portfolio analytics, dividend income tracking, realised return calculation, and multi-broker portfolio management in Stockflow.",
     type: "website",
     url: "https://stockflow.lk/features",
   },

@@ -15,16 +15,16 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Stockflow | Track Realized Stock Profits & Dividends",
-  description: "Track your realized stock profits, dividends, and true portfolio performance for Sri Lankan investors. The smartest way to manage your CSE portfolio.",
+  title: "Stockflow | AI Portfolio Management for CSE Investors",
+  description: "AI-powered stock market portfolio management for Colombo Stock Exchange investors. Track realised returns, dividend income, and portfolio performance in one app.",
   icons: {
     icon: "/logo.png",
     shortcut: "/logo.png",
     apple: "/logo.png",
   },
   openGraph: {
-    title: "Stockflow | Track Realized Stock Profits & Dividends",
-    description: "Track your realized stock profits, dividends, and true portfolio performance for Sri Lankan investors.",
+    title: "Stockflow | AI Portfolio Management for CSE Investors",
+    description: "AI-powered portfolio management and analytics for Colombo Stock Exchange investors, with dividend income tracking.",
     url: "https://stockflow.lk",
     siteName: "Stockflow",
     images: [
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Stockflow",
-    description: "Track your realized stock profits, dividends, and true portfolio performance for Sri Lankan investors.",
+    description: "AI-powered CSE portfolio management with analytics, realised performance tracking, and dividend income insights.",
     images: ["/logo.png"],
   },
 };

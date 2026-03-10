@@ -4,13 +4,13 @@ import Footer from "@/components/shared/footer"
 import PricingContent from "@/components/pricing-content"
 
 export const metadata: Metadata = {
-  title: "Pricing | Stockflow for Sri Lankan CSE Investors",
+  title: "Pricing | Stockflow AI Portfolio App for CSE Investors",
   description:
-    "See Stockflow pricing for Sri Lankan investors. A clear annual plan for tracking realised CSE profits, dividends, and capital movement.",
+    "See pricing for Stockflow, the AI-based Colombo Stock Exchange portfolio management and dividend income tracking app.",
   openGraph: {
-    title: "Pricing | Stockflow for Sri Lankan CSE Investors",
+    title: "Pricing | Stockflow AI Portfolio App for CSE Investors",
     description:
-      "See Stockflow pricing for Sri Lankan investors. A clear annual plan for tracking realised CSE profits, dividends, and capital movement.",
+      "See pricing for Stockflow, the AI-based Colombo Stock Exchange portfolio management and dividend income tracking app.",
     type: "website",
     url: "https://stockflow.lk/pricing",
   },

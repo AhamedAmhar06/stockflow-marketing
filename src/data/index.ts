@@ -16,18 +16,18 @@ export interface Step {
 export const features: Feature[] = [
   {
     icon: "TrendingUp",
-    title: "Realized Profit Tracking",
-    description: "Know your actual profits after selling stocks — including official CSE transaction costs."
+    title: "AI Portfolio Analytics",
+    description: "Use AI-based analytics built for Colombo Stock Exchange portfolios to evaluate realised outcomes and risk signals."
   },
   {
     icon: "DollarSign",
     title: "Dividend Income Tracker",
-    description: "Track dividends across all your holdings and see your passive income grow over time."
+    description: "Track dividend income across all your CSE holdings and see your income growth over time."
   },
   {
     icon: "PieChart",
-    title: "True Portfolio Performance",
-    description: "Understand your real returns by combining realized profits and dividends — not misleading market values."
+    title: "Stock Market Portfolio Management",
+    description: "Manage your stock portfolio with clear views of realised returns, dividend income, and capital movement."
   },
   {
     icon: "Shield",
@@ -45,8 +45,8 @@ export const steps: Step[] = [
   },
   {
     number: 2,
-    title: "Stockflow does the math",
-    description: "We calculate realized profits, dividends,broker commissions and true returns automatically.",
+    title: "Stockflow runs AI analysis",
+    description: "We calculate realised profits, dividends, broker commissions, and AI-powered portfolio insights automatically.",
     icon: "BarChart3"
   },
   {

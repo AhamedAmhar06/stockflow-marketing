@@ -18,9 +18,9 @@ const fadeUp = {
 
 const featuredArticle = {
   category: "FAQ guide",
-  title: "How realised profit works in StockFlow",
+  title: "How AI portfolio analytics works in StockFlow",
   meta: "Read the full article on Medium",
-  desc: "Understand how brokerage, capital returned, and dividend income affect the numbers you see in your portfolio summary.",
+  desc: "Understand how AI analytics, brokerage, capital returned, and dividend income shape the numbers you see in your CSE portfolio summary.",
 }
 
 const faqs = [
@@ -32,7 +32,12 @@ const faqs = [
   {
     question: "Do you have real-time prices?",
     answer:
-      "Not at the moment. StockFlow focuses on realised profit after brokerage and dividend income, which is the number many investors struggle to calculate accurately.",
+      "Not at the moment. StockFlow focuses on AI-based portfolio analytics, realised profit after brokerage, and dividend income, which are the numbers many CSE investors struggle to calculate accurately.",
+  },
+  {
+    question: "How does AI analytics help CSE investors?",
+    answer:
+      "StockFlow uses AI-assisted analytics to surface clearer performance signals across realised returns, dividend income trends, and capital movement, so portfolio decisions are based on net outcomes.",
   },
   {
     question: "How is realised profit calculated?",
@@ -66,7 +71,7 @@ export default function FAQContent() {
               FAQ + guides
             </p>
             <h1 className="mt-6 text-[3.8rem] font-medium leading-[0.94] tracking-[-0.07em] text-[#0f172a] sm:text-[5.8rem]">
-              Learn how to invest with StockFlow.
+              Learn how to manage your CSE portfolio with StockFlow.
             </h1>
           </motion.div>
 
@@ -127,7 +132,7 @@ export default function FAQContent() {
               Frequently asked questions
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">
-              Everything you will ask before trusting a portfolio tracker with your workflow.
+              Everything you will ask before trusting an AI-based portfolio management app with your workflow.
             </p>
           </motion.div>
 

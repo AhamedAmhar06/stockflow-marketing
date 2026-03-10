@@ -1,4 +1,5 @@
 import Link from "next/link"
+import type { LucideIcon } from "lucide-react"
 import BrandMark from "@/components/shared/brand-mark"
 
 const productLinks = [
@@ -11,6 +12,18 @@ const companyLinks = [
   { href: "/contact", label: "Contact" },
   { href: "/privacy-policy", label: "Privacy Policy" },
 ]
+
+type SocialLink = {
+  href: string
+  label: string
+  icon: LucideIcon
+}
+
+const socialLinks = [
+  // Add your social media links here
+  // { href: "https://twitter.com", label: "Twitter", icon: TwitterIcon },
+  // { href: "https://linkedin.com", label: "LinkedIn", icon: LinkedInIcon },
+] as SocialLink[]
 
 export default function Footer() {
   return (
@@ -25,8 +38,8 @@ export default function Footer() {
               iconClassName="h-10 w-10"
             />
             <p className="max-w-[24rem] text-lg leading-relaxed text-[#9aa3b7]">
-              A CSE portfolio tracker built for Sri Lankan investors.
-              Track realised profits after brokerage and dividend income in one clean view.
+              An AI-powered stock market portfolio management app for Colombo Stock Exchange investors.
+              Track dividend income, realised performance, and portfolio analytics in one clean view.
             </p>
           </div>
 
@@ -84,7 +97,7 @@ export default function Footer() {
             <ul className="space-y-3 text-lg text-[#b6bdd0]">
               <li>Privacy-first design</li>
               <li>Works alongside any broker</li>
-              <li>Built for the Colombo Stock Exchange</li>
+              <li>AI analytics built for the Colombo Stock Exchange</li>
             </ul>
           </div>
         </div>
@@ -95,9 +108,28 @@ export default function Footer() {
             <p className="text-sm text-[#6d7690]">
               &copy; {new Date().getFullYear()} Stockflow.lk &mdash; All rights reserved
             </p>
-            <p className="text-sm text-[#9aa3b7] sm:text-right">
-              Built for Sri Lankan CSE investors &bull; Privacy-first
-            </p>
+            <div className="flex items-center gap-4">
+              <div className="flex items-center gap-3">
+                {socialLinks.map((social) => {
+                  const Icon = social.icon
+                  return (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[#b6bdd0] transition-colors hover:text-white"
+                      aria-label={social.label}
+                    >
+                      <Icon className="h-5 w-5" />
+                    </a>
+                  )
+                })}
+              </div>
+              <p className="text-sm text-[#9aa3b7]">
+                Built for Colombo Stock Exchange investors &bull; AI analytics & privacy-first
+              </p>
+            </div>
           </div>
         </div>
       </div>

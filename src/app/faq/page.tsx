@@ -4,14 +4,14 @@ import Footer from "@/components/shared/footer"
 import FAQContent from "@/components/faq-content"
 
 export const metadata: Metadata = {
-  title: "FAQ | Stockflow CSE Portfolio Tracker (After Brokerage + Dividends)",
+  title: "FAQ | Stockflow AI CSE Portfolio Management App",
   description:
-    "FAQs about Stockflow: realised profit after brokerage, dividend tracking, privacy, manual entry, and portfolio workflows for Sri Lankan investors.",
+    "FAQs about Stockflow's AI-based analytics for Colombo Stock Exchange portfolios, dividend income tracking, privacy, and workflow.",
   openGraph: {
     title:
-      "FAQ | Stockflow CSE Portfolio Tracker (After Brokerage + Dividends)",
+      "FAQ | Stockflow AI CSE Portfolio Management App",
     description:
-      "FAQs about Stockflow: realised profit after brokerage, dividend tracking, privacy, manual entry, and portfolio workflows for Sri Lankan investors.",
+      "FAQs about Stockflow's AI-based analytics for Colombo Stock Exchange portfolios, dividend income tracking, privacy, and workflow.",
     type: "website",
     url: "https://stockflow.lk/faq",
   },

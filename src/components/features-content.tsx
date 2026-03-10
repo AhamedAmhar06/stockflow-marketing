@@ -26,8 +26,8 @@ const stagger = {
 
 const coreFeatures = [
   {
-    title: "Realised profit after brokerage",
-    desc: "See what you actually earned from completed trades once fees are accounted for.",
+    title: "AI-powered portfolio analytics",
+    desc: "See AI-assisted portfolio signals together with what you actually earned from completed trades after fees.",
     label: "Performance",
     icon: LineChart,
     size: "large",
@@ -62,7 +62,7 @@ const coreFeatures = [
   },
   {
     title: "Automation roadmap",
-    desc: "SMS trade detection and smarter imports are planned to reduce friction over time.",
+    desc: "SMS trade detection and smarter AI imports are planned to reduce friction over time.",
     label: "Roadmap",
     icon: BellRing,
     size: "large",
@@ -72,8 +72,8 @@ const coreFeatures = [
 const advantageCards = [
   {
     icon: BarChart3,
-    title: "Made for net return clarity",
-    desc: "Performance summaries focus on what matters after costs, not just mark-to-market movement.",
+    title: "Made for analytics-driven clarity",
+    desc: "AI-supported summaries focus on what matters after costs, not just mark-to-market movement.",
   },
   {
     icon: ShieldCheck,
@@ -90,7 +90,7 @@ const advantageCards = [
 const workflowCards = [
   "Add capital, existing holdings, and cash balances.",
   "Log completed buys, sells, fees, and dividends.",
-  "Read realised performance with cleaner summaries.",
+  "Read AI-assisted portfolio performance with cleaner summaries.",
 ]
 
 function FeatureTileVisual({ label }: { label: string }) {
@@ -223,11 +223,11 @@ export default function FeaturesContent() {
               Product features
             </p>
             <h1 className="mt-6 text-[3.6rem] font-medium leading-[0.94] tracking-[-0.07em] text-white sm:text-[5.8rem]">
-              Everything you need to track real CSE performance.
+              Everything you need for AI-powered CSE portfolio management.
             </h1>
             <p className="mt-8 max-w-[40rem] text-xl leading-relaxed text-slate-300">
-              StockFlow is built around net outcomes, clearer reporting, and a
-              calmer workflow for Colombo Stock Exchange investors.
+              StockFlow is built around AI-based analytics, dividend income tracking,
+              and clearer reporting for Colombo Stock Exchange investors.
             </p>
             <div className="mt-10">
               <Link
@@ -309,8 +309,8 @@ export default function FeaturesContent() {
               </span>
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-300 sm:text-2xl">
-              The experience is structured around how investors actually review
-              performance, income, capital movement, and coverage.
+              The experience is structured around how CSE investors actually review
+              analytics, performance, income, capital movement, and coverage.
             </p>
           </motion.div>
 
@@ -373,7 +373,7 @@ export default function FeaturesContent() {
               Why it works
             </p>
             <h2 className="mt-4 text-4xl font-semibold tracking-[-0.06em] text-[#0f172a] sm:text-6xl">
-              Unique advantages for Sri Lankan investors
+              Unique advantages for Colombo Stock Exchange investors
             </h2>
           </motion.div>
 

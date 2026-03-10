@@ -4,13 +4,13 @@ import Footer from "@/components/shared/footer"
 import HomeContent from "@/components/landing-page"
 
 export const metadata: Metadata = {
-  title: "Stockflow | Track Real CSE Profits After Brokerage",
+  title: "Stockflow | AI Stock Market Portfolio Management for CSE",
   description:
-    "Stockflow is a CSE portfolio tracker built for Sri Lankan investors. Track realised profits after brokerage, dividends, and your true return in one clean view.",
+    "Stockflow is an AI-based stock market portfolio management app for Colombo Stock Exchange investors. Track dividend income, realised returns, and portfolio analytics in one place.",
   openGraph: {
-    title: "Stockflow | Track Real CSE Profits After Brokerage",
+    title: "Stockflow | AI Stock Market Portfolio Management for CSE",
     description:
-      "Stockflow is a CSE portfolio tracker built for Sri Lankan investors. Track realised profits after brokerage, dividends, and your true return in one clean view.",
+      "Stockflow is an AI-based stock market portfolio management app for Colombo Stock Exchange investors. Track dividend income, realised returns, and portfolio analytics in one place.",
     type: "website",
     url: "https://stockflow.lk",
   },

@@ -16,13 +16,13 @@ const supportCards = [
   },
   {
     icon: MessageSquareText,
-    title: "Product questions",
-    detail: "Share your current workflow and what you want to track.",
+    title: "AI analytics questions",
+    detail: "Share your CSE portfolio goals and what analytics you want StockFlow to surface.",
   },
   {
     icon: Phone,
-    title: "Setup guidance",
-    detail: "We can help you think through how StockFlow fits your portfolio tracking.",
+    title: "Portfolio setup guidance",
+    detail: "We can help map your holdings, dividend tracking, and ongoing portfolio workflow.",
   },
 ]
 
@@ -42,11 +42,11 @@ export default function ContactContent() {
               Contact us
             </p>
             <h1 className="mt-6 text-[3.8rem] font-medium leading-[0.94] tracking-[-0.07em] text-white sm:text-[5.8rem]">
-              Talk to us about your portfolio workflow.
+              Talk to us about your CSE portfolio strategy.
             </h1>
             <p className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-slate-300">
-              Whether you have product questions, want help evaluating the fit,
-              or need setup guidance, this is the place to reach the StockFlow team.
+              Whether you need AI analytics guidance, dividend income tracking support,
+              or onboarding help, this is the place to reach the StockFlow team.
             </p>
           </motion.div>
         </div>

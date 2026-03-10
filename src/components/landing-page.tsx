@@ -50,10 +50,10 @@ const brokerLogos = [
 ]
 
 const assetItems = [
-  "Stocks & Funds",
-  "Real estate",
-  "Savings accounts",
-  "Private deals",
+  "CSE Stocks",
+  "Sector allocation",
+  "Realised returns",
+  "Capital deployed",
   "Dividend income",
   "Brokerage costs",
 ]
@@ -87,8 +87,8 @@ const coverageCards = [
 
 const featureCards = [
   {
-    title: "Realised Profit After Brokerage",
-    desc: "Track the net result of completed trades including brokerage fees.",
+    title: "AI-Based Portfolio Analytics",
+    desc: "Track AI-assisted portfolio signals together with net trade outcomes after brokerage fees.",
     label: "Performance",
     size: "tall",
   },
@@ -111,14 +111,14 @@ const featureCards = [
     size: "standard",
   },
   {
-    title: "Performance Summaries",
-    desc: "Understand your portfolio performance clearly over time.",
+    title: "Portfolio Performance Insights",
+    desc: "Understand portfolio performance clearly with AI-guided summaries over time.",
     label: "Reporting",
     size: "standard",
   },
   {
-    title: "Future Automation",
-    desc: "SMS trade detection will reduce manual tracking in future updates.",
+    title: "AI Automation Roadmap",
+    desc: "SMS trade detection and smarter AI imports will reduce manual tracking in future updates.",
     label: "Automation",
     size: "tall",
   },
@@ -134,7 +134,7 @@ const securityBullets = [
 const communityCards = [
   {
     title: "Product updates",
-    desc: "Stay informed about improvements to StockFlow.",
+    desc: "Stay informed about AI analytics and product improvements in StockFlow.",
     stat: "Release notes and product updates",
   },
   {
@@ -149,7 +149,7 @@ const communityCards = [
   },
   {
     title: "Portfolio insights",
-    desc: "Understand your performance better over time.",
+    desc: "Understand your CSE portfolio performance better over time.",
     stat: "Clearer long-term decisions",
   },
 ]
@@ -165,7 +165,7 @@ const steps = [
   },
   {
     title: "See what you actually earned",
-    desc: "Get a cleaner view of realised profit, returned capital, dividend income, and portfolio efficiency.",
+    desc: "Get a cleaner view of AI analytics, realised profit, returned capital, dividend income, and portfolio efficiency.",
   },
 ]
 
@@ -323,7 +323,7 @@ export default function HomeContent() {
         <div className="relative mx-auto grid max-w-[1380px] items-center gap-16 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(520px,0.95fr)] lg:px-10">
           <div className="max-w-[42rem] pt-10 lg:pt-16">
             <span className="inline-flex items-center rounded-full border border-[#9b7343] bg-[rgba(232,179,111,0.08)] px-5 py-2 text-sm font-medium text-[#f3d8b0]">
-              CSE portfolio tracker
+              AI CSE portfolio management app
             </span>
             <h1 className="mt-10 max-w-[11ch] text-[4.2rem] font-medium leading-[0.94] tracking-[-0.07em] text-[#f3efe7] sm:text-[5.5rem] lg:text-[7rem]">
               Know. Track.
@@ -336,11 +336,11 @@ export default function HomeContent() {
             </h1>
             <div className="mt-12 grid max-w-2xl gap-8 text-lg leading-relaxed text-[#9ca3b7] sm:grid-cols-2">
               <p>
-                StockFlow helps Colombo Stock Exchange investors understand what
-                they actually made after costs, not just what the market chart says.
+                StockFlow helps Colombo Stock Exchange investors manage stock portfolios
+                with AI-based analytics focused on net outcomes.
               </p>
               <p>
-                Track realised profit, dividends, invested capital, and net
+                Track realised profit, dividend income, invested capital, and net
                 returns in a single portfolio view built for CSE workflows.
               </p>
             </div>
@@ -363,7 +363,7 @@ export default function HomeContent() {
                   10k+
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-[#b4b8c4]">
-                  simulated trades modelled across real CSE investor workflows.
+                  portfolio events modelled across real CSE investor workflows.
                 </p>
               </div>
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] px-6 py-7 shadow-[0_24px_80px_rgba(0,0,0,0.3)] backdrop-blur">
@@ -374,7 +374,7 @@ export default function HomeContent() {
                   Net P/L
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-[#b4b8c4]">
-                  Realised profit reflects brokerage, capital returned, and dividends.
+                  AI analytics combine brokerage, capital returned, realised profit, and dividends.
                 </p>
               </div>
               <div className="rounded-[2rem] border border-white/10 bg-white/[0.06] px-6 py-7 shadow-[0_24px_80px_rgba(0,0,0,0.3)] backdrop-blur">
@@ -385,7 +385,7 @@ export default function HomeContent() {
                   LKR ready
                 </p>
                 <p className="mt-3 text-base leading-relaxed text-[#b4b8c4]">
-                  Portfolio summaries designed around the numbers Sri Lankan investors use.
+                  Portfolio summaries designed for Colombo Stock Exchange investors in LKR.
                 </p>
               </div>
             </div>
@@ -560,11 +560,11 @@ export default function HomeContent() {
               Supported brokers in Sri Lanka
             </p>
             <h2 className="mt-4 text-3xl font-semibold tracking-[-0.05em] text-[#0f172a] sm:text-4xl">
-              Built around the Colombo Stock Exchange broker ecosystem.
+              Built for Colombo Stock Exchange portfolio management.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-[#5b6578] sm:text-lg">
-              StockFlow is designed for Sri Lankan investors who trade across
-              local brokers and want one clear view of net returns in LKR.
+              StockFlow gives CSE investors one AI-powered view across local brokers,
+              portfolio analytics, and dividend income in LKR.
             </p>
           </motion.div>
 
@@ -615,7 +615,7 @@ export default function HomeContent() {
             viewport={{ once: true, margin: "-80px" }}
           >
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.24em] text-[#bf7a28]">
-              All your assets in one place
+              Portfolio intelligence in one place
             </p>
             <div className="space-y-2">
               {assetItems.map((item, index) => (
@@ -632,7 +632,7 @@ export default function HomeContent() {
                   {index === 0 ? (
                     <p className="mt-6 max-w-[38rem] text-lg leading-relaxed text-[#5b6578]">
                       Track every part of your portfolio in one place and keep
-                      realised performance visible across capital, income, fees,
+                      AI analytics visible across capital, income, fees,
                       and longer-term assets.
                     </p>
                   ) : null}
@@ -644,7 +644,7 @@ export default function HomeContent() {
                 href="/contact"
                 className="inline-flex h-16 items-center rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-lg font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.22)] transition hover:brightness-105"
               >
-                Connect all your assets
+                Manage your stock portfolio
               </Link>
             </div>
           </motion.div>
@@ -716,12 +716,12 @@ export default function HomeContent() {
           >
             <h2 className="text-4xl font-semibold tracking-[-0.06em] sm:text-6xl">
               <span className="bg-gradient-to-r from-[#f7d578] via-[#efbc42] to-[#f7d578] bg-clip-text text-transparent">
-                Optimise your CSE portfolio
+                Manage your CSE portfolio with AI analytics
               </span>
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-300 sm:text-2xl">
-              A polished feature system built around realised profit, cleaner
-              reporting, and multi-broker visibility for Sri Lankan investors.
+              A polished feature system built around AI insights, dividend income tracking,
+              realised profit, and multi-broker visibility.
             </p>
           </motion.div>
 
@@ -795,9 +795,8 @@ export default function HomeContent() {
               Security and privacy matter.
             </h2>
             <p className="mt-8 max-w-[38rem] text-xl leading-relaxed text-[#536179]">
-              StockFlow is designed as a personal portfolio tracker. Your data
-              stays private, your workflow stays lightweight, and your numbers
-              stay under your control.
+              StockFlow is designed as a personal portfolio management app. Your data
+              stays private while AI analytics help you make more confident CSE decisions.
             </p>
             <ul className="mt-10 space-y-5 text-xl text-[#334155]">
               {securityBullets.map((bullet) => (
@@ -890,10 +889,10 @@ export default function HomeContent() {
             viewport={{ once: true, margin: "-80px" }}
           >
             <h2 className="text-4xl font-semibold tracking-[-0.06em] text-white sm:text-6xl">
-              Built with investors in mind.
+              Built for smarter CSE investing.
             </h2>
             <p className="mx-auto mt-5 max-w-3xl text-lg leading-relaxed text-slate-300">
-              Clear communication, practical education, and portfolio insight
+              Clear communication, practical education, and AI-powered portfolio insight
               should feel like part of the product, not an afterthought.
             </p>
           </motion.div>
@@ -953,11 +952,11 @@ export default function HomeContent() {
               Start simply
             </p>
             <h2 className="max-w-[11ch] text-4xl font-semibold leading-[1.02] tracking-[-0.06em] text-[#0f172a] sm:text-6xl">
-              Track your portfolio in 3 simple steps.
+              Start AI-powered portfolio tracking in 3 simple steps.
             </h2>
             <p className="mt-8 max-w-[36rem] text-xl leading-relaxed text-[#5b6578]">
               The workflow is intentionally straightforward so you can focus on
-              understanding performance instead of maintaining a spreadsheet.
+              understanding performance and dividend income instead of maintaining a spreadsheet.
             </p>
 
             <div className="mt-10 space-y-5">

@@ -34,8 +34,8 @@ const steps = [
   },
   {
     num: "3",
-    title: "See your true return",
-    desc: "You\u2019ll get a clean summary of your actual results.",
+    title: "Review AI analytics",
+    desc: "You\u2019ll get a clean summary of your portfolio performance with AI-based signals.",
     bullets: [
       "Total invested",
       "Total returned",
@@ -50,12 +50,12 @@ const personas = [
   {
     icon: TrendingUp,
     title: "Active traders",
-    desc: "Stop guessing your real profit after fees. See net realised results for every completed trade.",
+    desc: "Stop guessing your real profit after fees. See net realised results with AI-guided portfolio analytics.",
   },
   {
     icon: DollarSign,
     title: "Dividend investors",
-    desc: "Track yearly dividend income in one place. Know exactly what your portfolio is paying you.",
+    desc: "Track yearly dividend income in one place. Know exactly what your CSE portfolio is paying you.",
   },
   {
     icon: Users,
@@ -77,7 +77,7 @@ export default function HowItWorksContent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}
             >
-              Track real profits in 3 simple steps
+              Manage your CSE portfolio in 3 simple steps
             </motion.h1>
             <motion.p
               className="text-lg sm:text-xl text-slate-300 leading-relaxed"
@@ -86,7 +86,7 @@ export default function HowItWorksContent() {
               transition={{ duration: 0.5, delay: 0.1 }}
             >
               Add your capital, log trades, and see what you actually made
-              &mdash; including brokerage fees and dividends.
+              &mdash; including AI-powered insights, brokerage fees, and dividends.
             </motion.p>
           </div>
         </div>
@@ -169,8 +169,8 @@ export default function HowItWorksContent() {
                 The activation moment is clarity.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                The first time you see net realised profit after brokerage in
-                one view, tracking stops being a guess.
+                The first time you see AI analytics, net realised profit after brokerage,
+                and dividend income in one view, portfolio decisions stop being a guess.
               </p>
             </div>
           </motion.div>
@@ -189,7 +189,7 @@ export default function HowItWorksContent() {
             transition={{ duration: 0.5 }}
           >
             <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 mb-4">
-              Designed for every type of CSE investor
+              Designed for every type of Colombo Stock Exchange investor
             </h2>
           </motion.div>
 
