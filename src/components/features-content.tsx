@@ -223,11 +223,11 @@ export default function FeaturesContent() {
               Product features
             </p>
             <h1 className="mt-6 text-[3.6rem] font-medium leading-[0.94] tracking-[-0.07em] text-white sm:text-[5.8rem]">
-              Everything you need for AI-powered CSE portfolio management.
+              Best stock tracking app features for CSE investors.
             </h1>
             <p className="mt-8 max-w-[40rem] text-xl leading-relaxed text-slate-300">
-              StockFlow is built around AI-based analytics, dividend income tracking,
-              and clearer reporting for Colombo Stock Exchange investors.
+              StockFlow is built for investment analysis and portfolio management with
+              AI-based analytics, dividend income tracking, and clearer CSE reporting.
             </p>
             <div className="mt-10">
               <Link

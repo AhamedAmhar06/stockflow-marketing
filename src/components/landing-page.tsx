@@ -338,7 +338,7 @@ export default function HomeContent() {
         <div className="relative mx-auto grid max-w-[1380px] items-center gap-16 px-4 sm:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(520px,0.95fr)] lg:px-10">
           <div className="max-w-[42rem] pt-10 lg:pt-16">
             <span className="inline-flex items-center rounded-full border border-[#9b7343] bg-[rgba(232,179,111,0.08)] px-5 py-2 text-sm font-medium text-[#f3d8b0]">
-              AI CSE portfolio management app
+              Best stock tracking app for CSE investors
             </span>
             <h1 className="mt-10 max-w-[11ch] text-[4.2rem] font-medium leading-[0.94] tracking-[-0.07em] text-[#f3efe7] sm:text-[5.5rem] lg:text-[7rem]">
               Know. Track.
@@ -355,8 +355,8 @@ export default function HomeContent() {
                 with AI-based analytics focused on net outcomes.
               </p>
               <p>
-                Track realised profit, dividend income, invested capital, and net
-                returns in a single portfolio view built for CSE workflows.
+                Built for investment analysis and portfolio management, StockFlow tracks
+                realised profit, dividend income, invested capital, and net returns in one CSE-ready view.
               </p>
             </div>
             <div className="mt-12">
