@@ -169,6 +169,21 @@ const steps = [
   },
 ]
 
+const guidedOnboardingSteps = [
+  {
+    title: "Connect your CSE portfolio",
+    desc: "Add your Colombo Stock Exchange holdings, cash balance, and broker accounts in LKR.",
+  },
+  {
+    title: "Import trades and dividends",
+    desc: "Log or import buys, sells, brokerage costs, and dividend payouts in one timeline.",
+  },
+  {
+    title: "Get AI-driven analytics",
+    desc: "Receive AI-powered portfolio insights across realised return, dividend income, and performance trends.",
+  },
+]
+
 function FeatureCardVisual({ variant }: { variant: string }) {
   if (variant === "Performance") {
     return (
@@ -1021,7 +1036,7 @@ export default function HomeContent() {
                   </span>
                 </div>
                 <div className="grid gap-4">
-                  {steps.map((step, index) => (
+                  {guidedOnboardingSteps.map((step, index) => (
                     <div
                       key={step.title}
                       className={`rounded-[1.6rem] border px-5 py-5 ${

@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { Facebook, Instagram } from "lucide-react"
 import type { LucideIcon } from "lucide-react"
 import BrandMark from "@/components/shared/brand-mark"
 
@@ -20,9 +21,16 @@ type SocialLink = {
 }
 
 const socialLinks = [
-  // Add your social media links here
-  // { href: "https://twitter.com", label: "Twitter", icon: TwitterIcon },
-  // { href: "https://linkedin.com", label: "LinkedIn", icon: LinkedInIcon },
+  {
+    href: "https://www.instagram.com/stockflowlk?igsh=cXp1cXNpMzI0M2R2&utm_source=qr",
+    label: "Instagram",
+    icon: Instagram,
+  },
+  {
+    href: "https://www.facebook.com/share/196U68XMju/?mibextid=wwXIfr",
+    label: "Facebook",
+    icon: Facebook,
+  },
 ] as SocialLink[]
 
 export default function Footer() {
