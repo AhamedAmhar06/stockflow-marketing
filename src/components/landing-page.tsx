@@ -17,6 +17,7 @@ import {
   Users,
 } from "lucide-react"
 import BrandMark from "@/components/shared/brand-mark"
+import { event } from "@/lib/gtag"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 32 },
@@ -362,10 +363,11 @@ export default function HomeContent() {
             <div className="mt-12">
               <Link
                 href="/contact"
-                className="inline-flex h-20 items-center gap-3 rounded-full bg-[#e8b36f] px-10 text-2xl font-medium text-[#16110c] shadow-[0_26px_80px_rgba(232,179,111,0.22)] transition hover:bg-[#f0c080]"
+                className="inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-[#e8b36f] px-7 text-xl font-medium text-[#16110c] shadow-[0_26px_80px_rgba(232,179,111,0.22)] transition hover:bg-[#f0c080] sm:h-20 sm:w-auto sm:px-10 sm:text-2xl"
+                onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
               >
                 Contact Us
-                <ArrowRight className="h-6 w-6" />
+                <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6" />
               </Link>
             </div>
 
@@ -517,7 +519,7 @@ export default function HomeContent() {
                 </div>
               </div>
 
-              <div className="absolute -bottom-10 left-[-2.5rem] w-[23rem] rounded-[2.6rem] border border-black bg-[linear-gradient(180deg,rgba(5,7,12,1),rgba(9,10,16,0.96))] shadow-[0_36px_90px_rgba(0,0,0,0.65)] sm:left-[-4rem]">
+              <div className="hidden sm:block absolute -bottom-10 left-[-2.5rem] w-[23rem] rounded-[2.6rem] border border-black bg-[linear-gradient(180deg,rgba(5,7,12,1),rgba(9,10,16,0.96))] shadow-[0_36px_90px_rgba(0,0,0,0.65)] sm:left-[-4rem]">
                 <div className="flex items-center justify-center border-b border-white/10 px-6 py-5">
                   <div className="flex items-center gap-3 rounded-full bg-white/[0.04] px-4 py-3">
                     <span className="inline-flex h-10 w-10 items-center justify-center rounded-full bg-[#0d58c7] text-xl text-white">
@@ -657,7 +659,8 @@ export default function HomeContent() {
             <div className="mt-12">
               <Link
                 href="/contact"
-                className="inline-flex h-16 items-center rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-lg font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.22)] transition hover:brightness-105"
+                className="inline-flex h-14 w-full items-center justify-center rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-lg font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.22)] transition hover:brightness-105 sm:h-16 sm:w-auto"
+                onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
               >
                 Manage your stock portfolio
               </Link>
@@ -678,7 +681,7 @@ export default function HomeContent() {
                   key={card.name}
                   variants={fadeUp}
                   whileHover={{ x: -4, y: -4 }}
-                  className={`flex items-center justify-between gap-5 rounded-[1.8rem] bg-[#050608] px-5 py-5 text-white shadow-[0_25px_80px_rgba(6,8,15,0.24)] ring-1 ring-white/6 ${
+                  className={`flex flex-col gap-3 rounded-[1.8rem] bg-[#050608] px-5 py-5 text-white shadow-[0_25x_80px_rgba(6,8,15,0.24)] ring-1 ring-white/6 sm:flex-row sm:items-center sm:justify-between sm:gap-5 ${
                     index % 2 === 1 ? "lg:ml-12" : ""
                   }`}
                 >
@@ -693,7 +696,7 @@ export default function HomeContent() {
                       <p className="text-sm text-[#737b8b]">{card.ticker}</p>
                     </div>
                   </div>
-                  <div className="min-w-[13rem]">
+                  <div className="sm:min-w-[13rem]">
                     <p className="text-3xl font-medium tracking-[-0.05em] text-white">
                       {card.value}
                     </p>
@@ -741,7 +744,7 @@ export default function HomeContent() {
           </motion.div>
 
           <motion.div
-            className="grid gap-6 lg:grid-cols-3"
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
             variants={stagger}
             initial="hidden"
             whileInView="visible"
@@ -786,7 +789,10 @@ export default function HomeContent() {
 
           <div className="mt-14 text-center">
             <Link href="/contact">
-              <button className="inline-flex h-16 items-center gap-3 rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_22px_60px_rgba(229,170,91,0.28)] transition hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-[#020611]">
+              <button
+                className="inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_22px_60px_rgba(229,170,91,0.28)] transition hover:brightness-105 focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-[#020611] sm:h-16 sm:w-auto"
+                onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
+              >
                 Contact Us
                 <ArrowRight className="h-5 w-5" />
               </button>
@@ -913,7 +919,7 @@ export default function HomeContent() {
           </motion.div>
 
           <motion.div
-            className="mt-16 grid gap-6 lg:grid-cols-4"
+            className="mt-16 grid gap-6 sm:grid-cols-2 lg:grid-cols-4"
             variants={stagger}
             initial="hidden"
             whileInView="visible"
@@ -1008,7 +1014,8 @@ export default function HomeContent() {
             <div className="mt-12">
               <Link
                 href="/contact"
-                className="inline-flex h-16 items-center gap-3 rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.24)] transition hover:brightness-105"
+                className="inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.24)] transition hover:brightness-105 sm:h-16 sm:w-auto"
+                onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
               >
                 Contact Us
                 <ArrowRight className="h-5 w-5" />

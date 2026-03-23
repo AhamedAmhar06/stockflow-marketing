@@ -1,5 +1,8 @@
+'use client'
+
 import Link from "next/link"
 import { ArrowRight } from "lucide-react"
+import { event } from "@/lib/gtag"
 
 interface CTABandProps {
   heading?: string
@@ -18,7 +21,10 @@ export default function CTABand({
         </h2>
         <p className="text-lg text-gray-600 mb-8 leading-relaxed">{subtext}</p>
         <Link href="/contact">
-          <button className="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-full px-8 py-3.5 text-lg transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2">
+          <button
+            className="inline-flex w-full items-center justify-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-semibold rounded-full px-8 py-3.5 text-lg transition-colors focus:outline-none focus:ring-2 focus:ring-amber-500 focus:ring-offset-2 sm:w-auto"
+            onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
+          >
             Contact Us
             <ArrowRight className="w-5 h-5" />
           </button>
