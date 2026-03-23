@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion"
 import Link from "next/link"
+import { event } from "@/lib/gtag"
 import {
   ArrowRight,
   BarChart3,
@@ -232,7 +233,8 @@ export default function FeaturesContent() {
             <div className="mt-10">
               <Link
                 href="/contact"
-                className="inline-flex h-16 items-center gap-3 rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_22px_60px_rgba(229,170,91,0.28)] transition hover:brightness-105"
+                className="inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_22px_60px_rgba(229,170,91,0.28)] transition hover:brightness-105 sm:h-16 sm:w-auto"
+                onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
               >
                 Contact Us
                 <ArrowRight className="h-5 w-5" />
@@ -315,7 +317,7 @@ export default function FeaturesContent() {
           </motion.div>
 
           <motion.div
-            className="grid gap-6 lg:grid-cols-3"
+            className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
             variants={stagger}
             initial="hidden"
             whileInView="visible"
@@ -378,7 +380,7 @@ export default function FeaturesContent() {
           </motion.div>
 
           <motion.div
-            className="grid gap-8 lg:grid-cols-3"
+            className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3"
             variants={stagger}
             initial="hidden"
             whileInView="visible"

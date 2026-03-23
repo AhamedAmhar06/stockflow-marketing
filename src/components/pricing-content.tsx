@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import Link from "next/link"
 import { Check, Lock, Mail, UserCheck } from "lucide-react"
+import { event } from "@/lib/gtag"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 24 },
@@ -96,7 +97,8 @@ export default function PricingContent() {
 
               <Link
                 href="/contact"
-                className="inline-flex h-16 w-full items-center justify-center rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.22)] transition hover:brightness-105"
+                className="inline-flex h-14 w-full items-center justify-center rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.22)] transition hover:brightness-105 sm:h-16"
+                onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
               >
                 Contact Us
               </Link>
@@ -188,7 +190,7 @@ export default function PricingContent() {
           </motion.div>
 
           <motion.div
-            className="grid gap-10 lg:grid-cols-3"
+            className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3"
             variants={stagger}
             initial="hidden"
             whileInView="visible"
@@ -232,7 +234,8 @@ export default function PricingContent() {
             <div className="mt-8">
               <Link
                 href="/contact"
-                className="inline-flex h-16 items-center rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.24)] transition hover:brightness-105"
+                className="inline-flex h-14 w-full items-center justify-center rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-8 text-xl font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.24)] transition hover:brightness-105 sm:h-16 sm:w-auto"
+                onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
               >
                 Contact Us
               </Link>

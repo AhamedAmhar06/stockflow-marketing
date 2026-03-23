@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowRight, Mail } from "lucide-react"
+import { event } from "@/lib/gtag"
 import {
   Accordion,
   AccordionContent,
@@ -143,7 +144,19 @@ export default function FAQContent() {
             viewport={{ once: true, margin: "-80px" }}
             className="overflow-hidden rounded-[2rem] border border-white/10 bg-[linear-gradient(180deg,rgba(9,16,35,0.88),rgba(6,10,22,0.94))] shadow-[0_30px_90px_rgba(0,0,0,0.34)]"
           >
-            <Accordion type="single" collapsible className="w-full">
+            <Accordion
+              type="single"
+              collapsible
+              className="w-full"
+              onValueChange={(value) => {
+                if (value) {
+                  const faq = faqs.find((_, i) => `faq-${i}` === value)
+                  if (faq) {
+                    event({ action: 'open', category: 'FAQ', label: faq.question })
+                  }
+                }
+              }}
+            >
               {faqs.map((faq, index) => (
                 <AccordionItem
                   key={faq.question}
@@ -184,7 +197,8 @@ export default function FAQContent() {
             <div className="mt-8 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <Link
                 href="/contact"
-                className="inline-flex h-14 items-center gap-3 rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-7 text-lg font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.22)] transition hover:brightness-105"
+                className="inline-flex h-14 w-full items-center justify-center gap-3 rounded-full bg-[linear-gradient(135deg,#f2c07b_0%,#e5aa5b_100%)] px-7 text-lg font-medium text-[#16110c] shadow-[0_18px_50px_rgba(229,170,91,0.22)] transition hover:brightness-105 sm:w-auto"
+                onClick={() => event({ action: 'click', category: 'CTA', label: 'contact_us' })}
               >
                 Contact Us
                 <ArrowRight className="h-5 w-5" />
