@@ -71,7 +71,7 @@ export default function FAQContent() {
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#bf7a28]">
               FAQ + guides
             </p>
-            <h1 className="mt-6 text-[3.8rem] font-medium leading-[0.94] tracking-[-0.07em] text-[#0f172a] sm:text-[5.8rem]">
+            <h1 className="mt-6 text-[2.2rem] font-medium leading-[0.94] tracking-[-0.07em] text-[#0f172a] sm:text-[3.8rem] lg:text-[5.8rem]">
               Learn how to manage your CSE portfolio with StockFlow.
             </h1>
           </motion.div>
@@ -120,7 +120,7 @@ export default function FAQContent() {
         </div>
       </section>
 
-      <section className="bg-[#020611] py-24 text-slate-50">
+      <section className="bg-[#020611] py-16 sm:py-24 text-slate-50">
         <div className="mx-auto max-w-[980px] px-4 sm:px-6 lg:px-10">
           <motion.div
             className="mb-12 text-center"
@@ -176,7 +176,7 @@ export default function FAQContent() {
         </div>
       </section>
 
-      <section className="bg-[#f4f2ed] py-24">
+      <section className="bg-[#f4f2ed] py-16 sm:py-24">
         <div className="mx-auto max-w-[860px] px-4 sm:px-6 lg:px-10">
           <motion.div
             className="rounded-[2.2rem] border border-[#d5dbe4] bg-white p-8 text-center shadow-[0_20px_70px_rgba(15,23,42,0.08)]"

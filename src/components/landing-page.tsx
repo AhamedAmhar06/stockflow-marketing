@@ -341,7 +341,7 @@ export default function HomeContent() {
             <span className="inline-flex items-center rounded-full border border-[#9b7343] bg-[rgba(232,179,111,0.08)] px-5 py-2 text-sm font-medium text-[#f3d8b0]">
               Best stock tracking app for CSE investors
             </span>
-            <h1 className="mt-10 max-w-[11ch] text-[4.2rem] font-medium leading-[0.94] tracking-[-0.07em] text-[#f3efe7] sm:text-[5.5rem] lg:text-[7rem]">
+            <h1 className="mt-10 max-w-[11ch] text-[2.6rem] font-medium leading-[0.94] tracking-[-0.07em] text-[#f3efe7] sm:text-[5rem] lg:text-[7rem]">
               Know. Track.
               <br />
               Earn.
@@ -461,7 +461,7 @@ export default function HomeContent() {
                         March 2026 · Realised summary
                       </p>
                       <div className="mt-3 flex items-center gap-3">
-                        <p className="text-[3.3rem] font-medium tracking-[-0.06em] text-[#f3efe7]">
+                        <p className="text-[1.6rem] font-medium tracking-[-0.06em] text-[#f3efe7] sm:text-[2.6rem] md:text-[3.3rem]">
                           LKR 423,817
                         </p>
                         <span className="rounded-xl bg-[#103f31] px-3 py-2 text-sm font-medium text-[#57d8aa]">
@@ -477,7 +477,7 @@ export default function HomeContent() {
                     </span> */}
                   </div>
 
-                  <div className="mt-8 h-[18rem] overflow-hidden rounded-[1.7rem] bg-[linear-gradient(180deg,rgba(14,17,27,0.3),rgba(5,7,12,0.88))] p-4">
+                  <div className="mt-8 h-[10rem] overflow-hidden rounded-[1.7rem] sm:h-[18rem] bg-[linear-gradient(180deg,rgba(14,17,27,0.3),rgba(5,7,12,0.88))] p-4">
                     <div className="relative h-full w-full rounded-[1.3rem] border border-white/6 bg-[radial-gradient(circle_at_28%_0%,rgba(232,179,111,0.08),transparent_32%),linear-gradient(180deg,rgba(255,255,255,0.01),rgba(255,255,255,0))]">
                       <div className="absolute inset-x-0 top-1/4 border-t border-white/5" />
                       <div className="absolute inset-x-0 top-1/2 border-t border-white/5" />
@@ -585,7 +585,7 @@ export default function HomeContent() {
             </p>
           </motion.div>
 
-          <div className="mt-14 flex flex-wrap items-center justify-center gap-8 sm:gap-10 lg:gap-12">
+          <div className="mt-14 flex flex-wrap items-center justify-center gap-3 sm:gap-8 lg:gap-12">
             {brokerLogos.map((broker, index) => (
               <motion.div
                 key={broker.name}
@@ -623,7 +623,7 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="bg-[#f4f2ed] pb-24 pt-10 text-slate-900 sm:pb-28">
+      <section className="bg-[#f4f2ed] pb-14 pt-8 text-slate-900 sm:pb-20 lg:pb-28">
         <div className="mx-auto grid max-w-[1380px] items-start gap-16 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.92fr)_minmax(0,0.88fr)] lg:px-10">
           <motion.div
             variants={fadeUp}
@@ -638,7 +638,7 @@ export default function HomeContent() {
               {assetItems.map((item, index) => (
                 <div key={item}>
                   <h2
-                    className={`text-[3.2rem] font-medium leading-[0.98] tracking-[-0.07em] sm:text-[4.3rem] ${
+                    className={`text-[1.8rem] font-medium leading-[0.98] tracking-[-0.07em] sm:text-[3.2rem] lg:text-[4.3rem] ${
                       index === 0
                         ? "bg-gradient-to-r from-[#6479d4] via-[#9c9bc7] to-[#d7a160] bg-clip-text text-transparent"
                         : "text-black"
@@ -722,7 +722,7 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden border-t border-slate-900 bg-[#020611] py-24">
+      <section className="relative overflow-hidden border-t border-slate-900 bg-[#020611] py-16 sm:py-24">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_30%_55%,rgba(36,62,140,0.18),transparent_25%),radial-gradient(circle_at_72%_70%,rgba(235,171,93,0.12),transparent_24%)]" />
         <div className="mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-10">
           <motion.div
@@ -801,7 +801,7 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="bg-[#f4f2ed] py-24 text-slate-900">
+      <section className="bg-[#f4f2ed] py-16 sm:py-24 text-slate-900">
         <div className="mx-auto grid max-w-[1380px] items-start gap-16 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,0.95fr)] lg:px-10">
           <motion.div
             variants={fadeUp}
@@ -815,11 +815,11 @@ export default function HomeContent() {
             <h2 className="max-w-[12ch] text-4xl font-semibold leading-[1.02] tracking-[-0.06em] text-[#0f172a] sm:text-6xl">
               Security and privacy matter.
             </h2>
-            <p className="mt-8 max-w-[38rem] text-xl leading-relaxed text-[#536179]">
+            <p className="mt-8 max-w-[38rem] text-base leading-relaxed text-[#536179] sm:text-xl">
               StockFlow is designed as a personal portfolio management app. Your data
               stays private while AI analytics help you make more confident CSE decisions.
             </p>
-            <ul className="mt-10 space-y-5 text-xl text-[#334155]">
+            <ul className="mt-10 space-y-5 text-base text-[#334155] sm:text-xl">
               {securityBullets.map((bullet) => (
                 <li key={bullet} className="flex items-start gap-4">
                   <span className="mt-2 h-2.5 w-2.5 rounded-full bg-[#16b57c]" />
@@ -899,7 +899,7 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden border-t border-[#081229] bg-[#020611] py-24">
+      <section className="relative overflow-hidden border-t border-[#081229] bg-[#020611] py-16 sm:py-24">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_50%_34%,rgba(33,62,150,0.2),transparent_24%),radial-gradient(circle_at_20%_85%,rgba(235,171,93,0.12),transparent_24%)]" />
         <div className="mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-10">
           <motion.div
@@ -949,7 +949,7 @@ export default function HomeContent() {
                 <h3 className="text-3xl font-semibold tracking-[-0.05em] text-white">
                   {card.title}
                 </h3>
-                <p className="mt-4 text-xl leading-relaxed text-slate-300">
+                <p className="mt-4 text-base leading-relaxed text-slate-300 sm:text-xl">
                   {card.desc}
                 </p>
                 <p className="mt-8 text-sm uppercase tracking-[0.26em] text-[#f1be62]">
@@ -961,7 +961,7 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="bg-[#f4f2ed] py-24 text-slate-900">
+      <section className="bg-[#f4f2ed] py-16 sm:py-24 text-slate-900">
         <div className="mx-auto grid max-w-[1380px] items-center gap-16 px-4 sm:px-6 lg:grid-cols-[minmax(0,0.88fr)_minmax(0,0.94fr)] lg:px-10">
           <motion.div
             variants={fadeUp}
@@ -975,7 +975,7 @@ export default function HomeContent() {
             <h2 className="max-w-[11ch] text-4xl font-semibold leading-[1.02] tracking-[-0.06em] text-[#0f172a] sm:text-6xl">
               Start AI-powered portfolio tracking in 3 simple steps.
             </h2>
-            <p className="mt-8 max-w-[36rem] text-xl leading-relaxed text-[#5b6578]">
+            <p className="mt-8 max-w-[36rem] text-base leading-relaxed text-[#5b6578] sm:text-xl">
               The workflow is intentionally straightforward so you can focus on
               understanding performance and dividend income instead of maintaining a spreadsheet.
             </p>
