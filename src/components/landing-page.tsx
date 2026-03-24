@@ -217,7 +217,7 @@ function FeatureCardVisual({ variant }: { variant: string }) {
             <span>Yield</span>
             <span>Next 12 months</span>
           </div>
-          <div className="mb-4 grid grid-cols-2 gap-4 text-2xl text-white">
+          <div className="mb-4 grid grid-cols-2 gap-4 text-lg text-white">
             <span>4.8%</span>
             <span>LKR 38,200</span>
           </div>
@@ -243,7 +243,7 @@ function FeatureCardVisual({ variant }: { variant: string }) {
             <span>Annual fees</span>
             <span>Saved</span>
           </div>
-          <div className="mb-4 grid grid-cols-2 gap-4 text-2xl text-white">
+          <div className="mb-4 grid grid-cols-2 gap-4 text-lg text-white">
             <span>LKR 9,200</span>
             <span>LKR 41,800</span>
           </div>
@@ -840,8 +840,8 @@ export default function HomeContent() {
               variants={fadeUp}
               className="rounded-[2rem] bg-[#07173f] p-6 text-slate-50 shadow-[0_28px_80px_rgba(7,23,63,0.22)]"
             >
-              <div className="flex items-center gap-4">
-                <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#0f3d39] text-[#61e2bf]">
+              <div className="flex items-start gap-4">
+                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#0f3d39] text-[#61e2bf]">
                   <Lock className="h-6 w-6" />
                 </span>
                 <div>
@@ -860,8 +860,8 @@ export default function HomeContent() {
               variants={fadeUp}
               className="rounded-[2rem] border border-[#d6dbe3] bg-[#fbfbfa] p-6 shadow-[0_20px_60px_rgba(15,23,42,0.08)]"
             >
-              <div className="flex items-center gap-4">
-                <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#fbf1e4] text-[#e1992e]">
+              <div className="flex items-start gap-4">
+                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#fbf1e4] text-[#e1992e]">
                   <Shield className="h-6 w-6" />
                 </span>
                 <div>
@@ -880,8 +880,8 @@ export default function HomeContent() {
               variants={fadeUp}
               className="rounded-[2rem] border border-[#d6dbe3] bg-[#fbfbfa] p-6 shadow-[0_20px_60px_rgba(15,23,42,0.08)]"
             >
-              <div className="flex items-center gap-4">
-                <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-[#0f172a] text-white">
+              <div className="flex items-start gap-4">
+                <span className="inline-flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#0f172a] text-white">
                   <BarChart3 className="h-6 w-6" />
                 </span>
                 <div>

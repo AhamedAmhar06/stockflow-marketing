@@ -125,7 +125,7 @@ function FeatureTileVisual({ label }: { label: string }) {
           <span>Yield</span>
           <span>Next 12 months</span>
         </div>
-        <div className="mb-4 grid grid-cols-2 gap-4 text-2xl text-white">
+        <div className="mb-4 grid grid-cols-2 gap-4 text-lg text-white">
           <span>4.8%</span>
           <span>LKR 38,200</span>
         </div>
@@ -149,7 +149,7 @@ function FeatureTileVisual({ label }: { label: string }) {
           <span>Annual fees</span>
           <span>Saved</span>
         </div>
-        <div className="mb-4 grid grid-cols-2 gap-4 text-2xl text-white">
+        <div className="mb-4 grid grid-cols-2 gap-4 text-lg text-white">
           <span>LKR 9,200</span>
           <span>LKR 41,800</span>
         </div>
