@@ -125,7 +125,7 @@ function FeatureTileVisual({ label }: { label: string }) {
           <span>Yield</span>
           <span>Next 12 months</span>
         </div>
-        <div className="mb-4 grid grid-cols-2 gap-4 text-2xl text-white">
+        <div className="mb-4 grid grid-cols-2 gap-4 text-lg text-white">
           <span>4.8%</span>
           <span>LKR 38,200</span>
         </div>
@@ -149,7 +149,7 @@ function FeatureTileVisual({ label }: { label: string }) {
           <span>Annual fees</span>
           <span>Saved</span>
         </div>
-        <div className="mb-4 grid grid-cols-2 gap-4 text-2xl text-white">
+        <div className="mb-4 grid grid-cols-2 gap-4 text-lg text-white">
           <span>LKR 9,200</span>
           <span>LKR 41,800</span>
         </div>
@@ -223,10 +223,10 @@ export default function FeaturesContent() {
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f0be75]">
               Product features
             </p>
-            <h1 className="mt-6 text-[3.6rem] font-medium leading-[0.94] tracking-[-0.07em] text-white sm:text-[5.8rem]">
+            <h1 className="mt-6 text-[2.2rem] font-medium leading-[0.94] tracking-[-0.07em] text-white sm:text-[3.6rem] lg:text-[5.8rem]">
               Best stock tracking app features for CSE investors.
             </h1>
-            <p className="mt-8 max-w-[40rem] text-xl leading-relaxed text-slate-300">
+            <p className="mt-8 max-w-[40rem] text-base leading-relaxed text-slate-300 sm:text-xl">
               StockFlow is built for investment analysis and portfolio management with
               AI-based analytics, dividend income tracking, and clearer CSE reporting.
             </p>
@@ -295,7 +295,7 @@ export default function FeaturesContent() {
         </div>
       </section>
 
-      <section className="relative overflow-hidden bg-[#020611] py-24">
+      <section className="relative overflow-hidden bg-[#020611] py-16 sm:py-24">
         <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_48%_44%,rgba(31,57,141,0.22),transparent_28%),radial-gradient(circle_at_78%_70%,rgba(231,170,90,0.12),transparent_24%)]" />
         <div className="mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-10">
           <motion.div
@@ -362,7 +362,7 @@ export default function FeaturesContent() {
         </div>
       </section>
 
-      <section className="bg-[#f4f2ed] py-24 text-slate-900">
+      <section className="bg-[#f4f2ed] py-16 sm:py-24 text-slate-900">
         <div className="mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-10">
           <motion.div
             className="mx-auto mb-16 max-w-4xl text-center"

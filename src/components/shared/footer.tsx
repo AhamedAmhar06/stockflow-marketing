@@ -134,7 +134,7 @@ export default function Footer() {
                   )
                 })}
               </div>
-              <p className="text-sm text-[#9aa3b7]">
+              <p className="hidden text-sm text-[#9aa3b7] sm:block">
                 Built for Colombo Stock Exchange investors &bull; AI analytics & privacy-first
               </p>
             </div>

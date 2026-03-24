@@ -58,10 +58,10 @@ export default function PricingContent() {
             <p className="text-xs font-semibold uppercase tracking-[0.24em] text-[#f0be75]">
               Pricing
             </p>
-            <h1 className="mt-6 text-[3.8rem] font-medium leading-[0.94] tracking-[-0.07em] text-white sm:text-[5.8rem]">
+            <h1 className="mt-6 text-[2.2rem] font-medium leading-[0.94] tracking-[-0.07em] text-white sm:text-[3.8rem] lg:text-[5.8rem]">
               One annual plan for AI-powered CSE portfolio management.
             </h1>
-            <p className="mx-auto mt-8 max-w-3xl text-xl leading-relaxed text-slate-300">
+            <p className="mx-auto mt-8 max-w-3xl text-base leading-relaxed text-slate-300 sm:text-xl">
               StockFlow is priced for investors who want a serious workflow for
               AI analytics, dividend income tracking, and multi-broker CSE portfolio management.
             </p>
@@ -86,7 +86,7 @@ export default function PricingContent() {
                 <p className="text-sm font-semibold uppercase tracking-[0.24em] text-[#d39a52]">
                   Annual plan
                 </p>
-                <div className="mt-4 text-[4rem] font-medium tracking-[-0.08em] text-[#0f172a]">
+                <div className="mt-4 text-[2.8rem] font-medium tracking-[-0.08em] text-[#0f172a] sm:text-[4rem]">
                   USD 180
                 </div>
                 <p className="mt-2 text-xl text-[#6a7388]">per year</p>
@@ -173,7 +173,7 @@ export default function PricingContent() {
         </div>
       </section>
 
-      <section className="bg-[#020611] py-24 text-slate-50">
+      <section className="bg-[#020611] py-16 sm:py-24 text-slate-50">
         <div className="mx-auto max-w-[1380px] px-4 sm:px-6 lg:px-10">
           <motion.div
             className="mx-auto mb-14 max-w-4xl text-center"
@@ -217,7 +217,7 @@ export default function PricingContent() {
         </div>
       </section>
 
-      <section className="bg-[#f4f2ed] py-24">
+      <section className="bg-[#f4f2ed] py-16 sm:py-24">
         <div className="mx-auto max-w-[960px] px-4 text-center sm:px-6 lg:px-10">
           <motion.div
             variants={fadeUp}
